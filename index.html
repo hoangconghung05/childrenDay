@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chúc Mừng Ngày Quốc Tế Thiếu Nhi</title>
+    <title>THƯ CẢM ƠN CHI YÊU</title>
     <style>
         * {
             margin: 0;
@@ -12,7 +12,7 @@
         }
 
         body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
             background: linear-gradient(45deg, #ff9a9e, #fecfef, #fecfef, #a8edea);
             background-size: 400% 400%;
             animation: gradientShift 8s ease infinite;
@@ -51,6 +51,8 @@
             text-shadow: 3px 3px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff;
             margin-bottom: 20px;
             animation: rainbow 3s linear infinite;
+            font-weight: 800;
+            letter-spacing: 1px;
         }
 
         @keyframes rainbow {
@@ -67,6 +69,7 @@
             color: #2f3640;
             margin-bottom: 30px;
             text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+            font-weight: 600;
         }
 
         .floating-hearts {
@@ -177,6 +180,7 @@
             margin: 30px 0;
             text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
             animation: fadeInUp 2s ease-out 1s both;
+            font-weight: 500;
         }
 
         @keyframes fadeInUp {
@@ -258,7 +262,8 @@
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             margin: 20px 10px;
-            font-family: inherit;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 600;
         }
 
         .interactive-button:hover {
@@ -278,10 +283,38 @@
             z-index: 1000;
             text-align: center;
             transition: transform 0.3s ease;
+            max-width: 90vw;
+            max-height: 80vh;
+            overflow-y: auto;
+            width: 500px;
         }
 
         .message-popup.show {
             transform: translate(-50%, -50%) scale(1);
+        }
+
+        @media (max-width: 768px) {
+            .message-popup {
+                width: 90vw;
+                max-height: 70vh;
+                padding: 20px;
+                top: 50%;
+                transform: translate(-50%, -50%) scale(0);
+            }
+            
+            .message-popup.show {
+                transform: translate(-50%, -50%) scale(1);
+            }
+            
+            .message-popup h2 {
+                font-size: 1.5em;
+                margin-bottom: 15px;
+            }
+            
+            .message-popup p {
+                font-size: 1em !important;
+                line-height: 1.5 !important;
+            }
         }
 
         .overlay {
@@ -323,32 +356,32 @@
 
     <div class="container">
         <header class="header">
-            <h1 class="main-title">🎉 CHÚC MỪNG NGÀY QUỐC TẾ THIẾU NHI 🎉</h1>
-            <p class="subtitle">Dành tặng người bạn thân của tôi :)) ✨</p>
+            <h1 class="main-title">🎉 THƯ CẢM ƠN 🎉</h1>
+            <p class="subtitle">Dành Cho chị của em :)) ✨</p>
         </header>
 
         <div class="gift-box">
             <div class="photo-gallery">
                 <div class="photo-frame">
-                    <img src="cún.jpg" alt="Ảnh 1">
+                    <img src="minh.jpg" alt="Ảnh 1">
                 </div>
                 <div class="photo-frame">
-                    <img src="hung.jpg" alt="Ảnh 2">
+                    <img src="nh.jpg" alt="Ảnh 2">
                 </div>
                 <div class="photo-frame">
-                    <img src="hùng.jpg" alt="Ảnh 3">
+                    <img src="nha.jpg" alt="Ảnh 3">
                 </div>
                 <div class="photo-frame">
-                    <img src="trang.jpg" alt="Ảnh 4">
+                    <img src="nhàn.jpg" alt="Ảnh 4">
                 </div>
             </div>
 
             <div class="wishes-text">
-                <p>💖 <strong>Chúc bạn luôn được yêu thương và hạnh phúc</strong> 💖</p>
-                <p>🌟 Ngày 1/6 tới đây rồi, 🌟</p>
-                <p>🌸 Chúc bạn thân gái xinh tươi mọi ngày. 🌸</p>
-                <p>🎈 Tươi như nắng sớm ban mai, 🎈</p>
-                <p>💕 Ngập tràn hạnh phúc, chẳng ai bằng mình! 💕</p>
+                <p>💖 <strong>Cảm ơn chị </strong> 💖</p>
+                <p>🌟 Chị là ánh sáng giữa đời,🌟</p>
+                <p>🌸Dìu em qua những chơi vơi tháng ngày. 🌸</p>
+                <p>🎈 Ơn chị em mãi ghi hoài, 🎈</p>
+                <p>💕Ơn chị em mãi ghi hoài, 💕</p>
             </div>
 
             <div style="text-align: center;">
@@ -362,10 +395,10 @@
     <div class="message-popup" id="messagePopup">
         <h2 style="color: #ff4757; margin-bottom: 20px;">💝 Lời nhắn từ trái tim</h2>
         <p style="font-size: 1.2em; color: #2f3640; line-height: 1.6;">
-            Chúc bạn thân xinh đẹp của tớ một ngày Quốc tế Thiếu nhi thật nhiều niềm vui,<br>
-            ngập tràn tiếng cười và luôn vô tư hồn nhiên như hồi còn bé!<br>
-            Dù lớn rồi nhưng vẫn luôn giữ được trái tim trong sáng, đáng yêu nhé!<br><br>
-            Chúc bạn luôn hạnh phúc và được yêu thương! 💕
+           Chị à, em thật sự biết ơn vì những điều chị đã làm cho em.<br>
+            Chị luôn âm thầm quan tâm, lo lắng và nhường nhịn em mọi thứ. !<br>
+            Có chị bên cạnh, em thấy mình may mắn và vững vàng hơn rất nhiều.<br><br>
+            Em cảm ơn chị – không chỉ vì những gì chị làm, mà vì chính con người tuyệt vời của chị. 💕
         </p>
         <button class="interactive-button" onclick="hideMessage()">Đóng ❤️</button>
     </div>
